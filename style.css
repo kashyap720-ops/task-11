@@ -82,9 +82,7 @@ table td{padding:20px 15px;border-bottom:1px solid #ddd}
 .product-info h3{margin-bottom:5px}
 .product-info p{color:#666;font-size:14px}
 .cart-items input[type="number"]{width:70px;padding:8px;text-align:center}
-.coupon{margin-top:30px;display:flex;gap:15px}
-.coupon input,.input-box input{flex:1;padding:12px;border:1px solid #ccc;border-radius:6px}
-.coupon button{padding:12px 22px;background:var(--blue)}
+
 .summary{padding:30px;height:max-content}
 .summary h2{margin-bottom:25px}
 .summary-row{display:flex;justify-content:space-between;margin:18px 0}
@@ -167,3 +165,120 @@ table{
     width:100%;
 }
 
+.payment-icons{
+    flex:auto;
+    gap:2px;
+    justify-content:center;
+    background:blue;
+    color:black;
+}
+.product-gallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.product-gallery img {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.cart-summary{
+    position:absolute;
+    right:80px;
+    top:220px;
+}
+
+.coupon-card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.coupon-card label{
+    display:block;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+    color:#444;
+}
+
+.coupon-box{
+    display:flex;
+    margin-bottom:25px;
+}
+
+.coupon-box input{
+    flex:1;
+    height:48px;
+    border:1px solid #ddd;
+    border-right:none;
+    border-radius:10px 0 0 10px;
+    padding:0 15px;
+    outline:none;
+}
+
+.coupon-box button{
+    width:140px;
+    border:none;
+    background:#2f6df6;
+    color:#fff;
+    font-weight:600;
+    border-radius:0 10px 10px 0;
+    cursor:pointer;
+}
+
+.price-details div{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    color:#777;
+}
+
+.price-details hr{
+    border:none;
+    border-top:1px solid #eee;
+    margin:15px 0;
+}
+
+.total{
+    font-size:26px;
+    font-weight:700;
+    color:#222;
+}
+
+.total span:last-child{
+    font-weight:700;
+}
+
+.pay-btn{
+    width:100%;
+    margin-top:25px;
+    height:60px;
+    border:none;
+    border-radius:14px;
+    background:#ff9f2e;
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.payment-icons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:18px;
+}
+
+.payment-icons img{
+    height:30px;
+    object-fit:contain;
+}

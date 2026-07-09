@@ -4,45 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navbar -->
-
 <header>
-
 <nav class="navbar">
-
 <div class="logo">
 <span class="orange">Thala</span>
 <span class="blue">7.</span>
 </div>
-
 <ul class="nav-links">
-
 <li><a href="index.html">Home</a></li>
 <li><a href="products.html">Products</a></li>
 <li><a href="#">About</a></li>
 <li><a href="#">Contact</a></li>
-
 </ul>
-
 <div class="nav-icons">
-
 <a href="cart.html">
-
 <i class="fa-solid fa-cart-shopping"></i>
-
 </a>
-
 <img
-src="https://i.pravatar.cc/100"
-class="profile">
+src="https://i.pravatar.cc/100"class="profile">
 </div>
 </nav>
 </header>
@@ -123,85 +105,68 @@ min="1">
 
 </table>
 
-<div class="coupon">
 
-<input
-type="text"
-placeholder="Coupon Code">
+<div class="cart-summary">
 
-<button>
-Apply Coupon
-</button>
+    <div class="coupon-card">
+        <label>Enter Coupon Code</label>
 
+        <div class="coupon-box">
+            <input type="text" placeholder="COUPON CODE">
+            <button>Apply Coupon</button>
+        </div>
+
+        <div class="price-details">
+            <div>
+                <span>Sub Total</span>
+                <span>₹4,700</span>
+            </div>
+
+            <div>
+                <span>Taxes (if applicable)</span>
+                <span>₹199</span>
+            </div>
+
+            <div>
+                <span>Discount</span>
+                <span>₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="total">
+                <span>Total</span>
+                <span>₹4,999</span>
+            </div>
+        </div>
+    </div>
+<div>
+    
+    <a
+href="payment.html" class="checkout-btn">
+        Pay Now ₹4,999
+    </a>
 </div>
 
-</div>
-
-<!-- Right -->
-
-<div class="summary">
-
-<h2>Order Summary</h2>
-
-<div class="summary-row">
-
-<span>Subtotal</span>
-
-<span>₹8998</span>
+    <div class="payment-icons" class="payment-icons">
+        <img src="" alt="Secure">
+        <img src="" alt="Razorpay">
+        <img src="" alt="Payments">
+    </div>
 
 </div>
-
-<div class="summary-row">
-
-<span>Shipping</span>
-
-<span>₹150</span>
-
-</div>
-
-<div class="summary-row">
-
-<span>Discount</span>
-
-<span>-₹500</span>
-
-</div>
-
-<hr>
-
-<div class="summary-row total">
-
-<strong>Total</strong>
-
-<strong>₹8648</strong>
-
-</div>
-
 <a
-href="payment.html"
-class="checkout-btn">
-
+href="payment.html" class="checkout-btn">
 Proceed to Checkout
-
 </a>
-
 </div>
-
 </div>
-
 </section>
-
-<!-- Footer -->
-
 <footer>
-
 <p>
-
 © 2026 Thala 7 Sneaker Store | All Rights Reserved
-
 </p>
-
 </footer>
-
 </body>
 </html>
+
